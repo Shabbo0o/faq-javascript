@@ -34,11 +34,11 @@ fetch("https://jsonplaceholder.typicode.com/posts")
             button.classList.add('expander');
             button.setAttribute('aria-expanded', 'false');
             button.onclick = () => show_hidden_desc(button);
-            if (index % 2 === 0) {
-                button.style.backgroundColor = 'rgb(235, 229, 240)'; // Light yellow for even indexes
-            } else {
-                button.style.backgroundColor = '#e0f7fa'; // Light cyan for odd indexes
-            }
+            // if (index % 2 === 0) {
+            //     button.style.backgroundColor = 'rgb(235, 229, 240)'; // Light yellow for even indexes
+            // } else {
+            //     button.style.backgroundColor = '#e0f7fa'; // Light cyan for odd indexes
+            // }
             // Add the title to the button
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('expander-title');
@@ -75,6 +75,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     .catch(error => console.error('Error...', error));
 
 // Function to show/hide description and rotate icon
+
 function show_hidden_desc(button) {
     const description = button.nextElementSibling;
     const isExpanded = button.getAttribute("aria-expanded") === "true";
