@@ -34,11 +34,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
             button.classList.add('expander');
             button.setAttribute('aria-expanded', 'false');
             button.onclick = () => show_hidden_desc(button);
-            // if (index % 2 === 0) {
-            //     button.style.backgroundColor = 'rgb(235, 229, 240)'; // Light yellow for even indexes
-            // } else {
-            //     button.style.backgroundColor = '#e0f7fa'; // Light cyan for odd indexes
-            // }
+
             // Add the title to the button
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('expander-title');
@@ -56,12 +52,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
                 </svg>`;
             button.appendChild(titleDiv);
             button.appendChild(iconDiv);
-            
-            // Buttons' hover
-
-            // accordion.addEventListener("hover", (button) => {
-            //     button.target.style = "background-color: rgb(217, 227, 246)";
-            // })
 
             // Add the description
             const description = document.createElement('div');

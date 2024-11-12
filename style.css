@@ -23,7 +23,7 @@ body {
     width: 70%;
     padding: 10px 30px;
     border: 0;
-    border-bottom: 1px solid #929495;
+    border-bottom: 1px solid #c8c9ca;
     background: none;
     color: inherit;
     font-family: sans-serif;
@@ -70,7 +70,7 @@ body {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: height .2s ease;
+    transition: height .5s ease;
 }
 
 .show {
