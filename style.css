@@ -1,0 +1,93 @@
+html {
+    background-color: white;
+    color: #19171c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-family: sans-serif;
+}
+
+.expander {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 70%;
+    padding: 10px 30px;
+    border: 0;
+    border-bottom: 1px solid #929495;
+    background: none;
+    color: inherit;
+    font-family: sans-serif;
+    background-color: #f0f3f4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.expander:hover {
+    background-color: rgb(217, 227, 246); 
+}
+
+.expander-title {
+    text-align: left;
+}
+
+.expander-icon {
+    display: flex;
+    align-items: center;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* :hover {
+        background-color: rgb(217, 227, 246);
+    } */
+}
+
+.description {
+    width: 70%;
+    max-width: 700px;
+    text-align: left;
+    margin: 10px;
+    background-color: white;
+    padding: 0px 30px;
+    max-height: 0; 
+    overflow: hidden; 
+    transition: 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.show {
+    max-height: 300px;
+    opacity: 1;
+    padding: 10px 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.icon.rotated {
+    transform: rotate(-180deg);
+}
+
+/* button {
+    :hover {
+        background-color: rgb(217, 227, 246);
+    } 
+} */
